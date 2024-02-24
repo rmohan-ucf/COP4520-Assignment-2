@@ -36,7 +36,7 @@ void seeVase(int threadIndex) {
       this_thread::sleep_for(chrono::milliseconds(50 + (rand() % 51)));
 
       // Output and update relevant variables
-      cout << "Thread [" << threadIndex << "] has now viewed the vase." << endl;
+      cout << "Guest [" << threadIndex << "] has now viewed the vase." << endl;
       counter++;
       guestStatus[threadIndex] = true;
       
